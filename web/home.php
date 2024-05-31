@@ -9,10 +9,10 @@ if(isset($_SESSION['id'])&& isset($_SESSION['nom_public'])):?>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
   <body>
-    <div>
+    <div class="container_nav">
       <nav>
         <a href="play.php">Jugar</a>
         <a href="player_list.php">Llista de jugadors</a>
@@ -23,7 +23,7 @@ if(isset($_SESSION['id'])&& isset($_SESSION['nom_public'])):?>
     </div>
     <div >
         <div >
-            <h3 >
+            <h3 class="h3">
               Molt benvingut <?php echo $_SESSION['nom_public'] ?>
             </h3>
           
