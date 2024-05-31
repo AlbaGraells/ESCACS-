@@ -10,7 +10,7 @@
     <div class="contenedor">
       
         <div class="formulario">
-            <form action="php/login.php" method="post">
+            <form action="./php/login.php" method="post">
                 <h4 class="text4">Iniciar sessió per començar a jugar</h4>
                 <?php if(isset($_GET['error'])): ?>
                     <div><?php echo $_GET['error']; ?></div>
@@ -33,13 +33,7 @@
             </div>
             </form>
         </div>
-        <div id="dale">
-            <script>
-                for(let i=1;i<=120; i++){
-                    document.querySelector('#dale').innerHTML += `ALTER TABLE partida ADD torn${i} VARCHAR(16); <br>`;
-                }
-            </script>
-        </div>
+        
     </div>
 </body>
 </html>

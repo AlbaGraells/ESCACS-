@@ -63,6 +63,7 @@
                     //Nom d'usuari incorrecte
                     $em="Usuari i/o contrasenya incorrectes";
                     header("Location:../index.php?error=$em&uname=$uname");
+                    
                     exit();
                 }
 

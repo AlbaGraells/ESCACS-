@@ -12,12 +12,21 @@ if(isset($_SESSION['id'])&& isset($_SESSION['nom_public'])):?>
   <link rel="stylesheet" href="css/style.css">
 </head>
   <body>
+    <div>
+      <nav>
+        <a href="play.php">Jugar</a>
+        <a href="player_list.php">Llista de jugadors</a>
+        <a href="history.php">Historial de partides</a>
+       <a href="logout.php">Tanca sesió</a>
+
+      </nav>
+    </div>
     <div >
         <div >
             <h3 >
-              Benvingut <?php echo $_SESSION['nom_public'] ?>
+              Molt benvingut <?php echo $_SESSION['nom_public'] ?>
             </h3>
-            <a href="logout.php">Tanca la sessió</a>
+          
         </div>
     </div>
    
