@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(isset($_SESSION['id'])&& isset($_SESSION['fname'])):?>
+if(isset($_SESSION['id'])&& isset($_SESSION['nom_public'])):?>
 
 <!--Zona html--->
 <!doctype html>
@@ -15,7 +15,7 @@ if(isset($_SESSION['id'])&& isset($_SESSION['fname'])):?>
     <div >
         <div >
             <h3 >
-              Benvingut <?php echo $_SESSION['fname'] ?>
+              Benvingut <?php echo $_SESSION['nom_public'] ?>
             </h3>
             <a href="logout.php">Tanca la sessió</a>
         </div>

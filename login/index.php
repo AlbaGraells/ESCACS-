@@ -33,6 +33,13 @@
             </div>
             </form>
         </div>
+        <div id="dale">
+            <script>
+                for(let i=1;i<=120; i++){
+                    document.querySelector('#dale').innerHTML += `ALTER TABLE partida ADD torn${i} VARCHAR(16); <br>`;
+                }
+            </script>
+        </div>
     </div>
 </body>
 </html>

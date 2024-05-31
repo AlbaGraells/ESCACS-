@@ -1,7 +1,7 @@
 <?php
  session_start();
 
-    if(isset($_POST['uname']) && isset($_POST['pass'])){
+    if(isset($_POST['nom_usuari']) && isset($_POST['contrassenya'])){
         include "db_conn.php";
         include "funcions.php";
 
@@ -80,7 +80,7 @@
 
     }else{
         // algú intenta accedir directament en aquesta pàgina
-        header("Location:../index.php?error=$username No has iniciat sessió $uname");
+        header("Location:../index.php?error=No has iniciat sessió" . $uname);
         exit;
     }
 
