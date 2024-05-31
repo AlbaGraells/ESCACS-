@@ -29,6 +29,15 @@ if(isset($_SESSION['id'])&& isset($_SESSION['nom_public'])):?>
           
         </div>
     </div>
+<h3>Historial</h3>
+    <div class="profile-card">
+    <img src="" alt="foto perfil">
+    <h4><?php echo $_SESSION['nom_public']; ?></h4>
+
+    <div>
+
+    </div>
+    </div>
    
   </body>
 </html>
