@@ -15,8 +15,8 @@ if(isset($_SESSION['id'])&& isset($_SESSION['nom_public'])):?>
     <div class="container_nav">
       <nav>
         <a href="play.php">Jugar</a>
-        <a href="player_list.php">Llista de jugadors</a>
-        <a href="history.php">Historial de partides</a>
+        <!-- <a href="player_list.php">Llista de jugadors</a>
+        <a href="history.php">Historial de partides</a> -->
        <a href="logout.php">Tanca sesió</a>
 
       </nav>
@@ -46,7 +46,7 @@ if(isset($_SESSION['id'])&& isset($_SESSION['nom_public'])):?>
 
     <?php
 //Algu està intentant accedir directament a la pag web segura
-header("Location:index.php");
+header("Location:php/login.php");
 ?>
 
 

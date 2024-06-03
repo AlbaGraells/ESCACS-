@@ -60,8 +60,8 @@
              <input class="inpt2" type="password" placeholder="Confirma la contrasenya"  id="rpass" name="rpass">
             </div></div> 
 
-            <div >
-                <button class="btn2" >Registrate</button>
+            <div class="butons">
+                <button type="button" class="btn2" >Registrate</button>
                 <a class="link2" href="index.php" >Inicia sessión</a>
             </div>
 

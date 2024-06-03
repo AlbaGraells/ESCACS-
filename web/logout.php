@@ -2,7 +2,8 @@
 session_start();
 session_unset();
 session_destroy();
-header("Location:index.php");
+$em="Gracies per Jugar!";
+header("Location:index.php?success=$em");
 exit;
 
 ?>

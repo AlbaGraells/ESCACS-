@@ -49,7 +49,7 @@
                         //Si són iguals creo variables de sessió
                         $_SESSION['id']=$id;
                         $_SESSION['nom_public']=$fname;
-                        header("Location:../home.php");
+                        header("Location:../playS.php");
                         exit();
                     }else{
                         //contrasenya incorrecta

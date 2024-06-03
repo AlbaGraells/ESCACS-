@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicia sessió</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
 <body>
     <div class="contenedor">
@@ -18,6 +20,7 @@
                 <?php if(isset($_GET['error'])): ?>
                     <div><?php echo $_GET['error']; ?></div>
                 <?php endif; ?>
+               
                 <div class="campos">
                 <div>
                     <label class="nom"for="uname">Nom d'usuari:</label>
@@ -36,7 +39,15 @@
             </div>
             </form>
         </div>
-        
     </div>
+    <div class="congrats">
+    <?php if(isset($_GET['success'])): ?>
+                <div><?php echo $_GET['success']; ?></div>
+            <?php endif; ?>
+        </div>
+        <marquee class="marquee"behavior="scroll" scrollamount="50" direction="left">	&#9812; &#9813; &#9814;&#9815;&#9816;	&#9817;	&#9818;	&#9819;&#9820;	&#9821;	&#9822;&#9823;&#9812; &#9813; &#9814;&#9815;&#9816;	&#9817;	&#9818;	&#9819;&#9820;	&#9821;	&#9822;&#9823;&#9812; &#9813; &#9814;&#9815;&#9816;	&#9817;	&#9818;	&#9819;&#9820;	&#9821;	&#9822;&#9823;&#9812; &#9813; &#9814;&#9815;&#9816;	&#9817;	&#9818;	&#9819;&#9820;	&#9821;	&#9822;&#9823;&#9812; &#9813; &#9814;&#9815;&#9816;	&#9817;	&#9818;	&#9819;&#9820;	&#9821;	&#9822;&#9823;&#9812; &#9813; &#9814;&#9815;&#9816;	&#9817;	&#9818;	&#9819;&#9820;	&#9821;	&#9822;&#9823;&#9812; &#9813; &#9814;&#9815;&#9816;	&#9817;	&#9818;	&#9819;&#9820;	&#9821;	&#9822;&#9823;&#9812; &#9813; &#9814;&#9815;&#9816;	&#9817;	&#9818;	&#9819;&#9820;	&#9821;	&#9822;&#9823;&#9812; &#9813; &#9814;&#9815;&#9816;	&#9817;	&#9818;	&#9819;&#9820;	&#9821;	&#9822;&#9823;&#9812; &#9813; &#9814;&#9815;&#9816;	&#9817;	&#9818;	&#9819;&#9820;	&#9821;	&#9822;&#9823;&#9812; &#9813; &#9814;&#9815;&#9816;	&#9817;	&#9818;	&#9819;&#9820;	&#9821;	&#9822;&#9823;</marquee>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>
